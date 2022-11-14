@@ -1,3 +1,5 @@
+//const { getStats } = require('./getStats');
+
 const statsWithValidation = (links, statsFunction) => {
     let statsOfLinks = statsFunction(links);
     let brokenLinks =  links.filter(e => e.StatusOfRequest != '200');
